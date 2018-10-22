@@ -19,7 +19,7 @@ class PyTest(TestCommand):
 
 
 setup(name='hestia',
-      version='0.0.5',
+      version='0.0.7',
       description='Polyaxon common utilities.',
       maintainer='Mourad Mourafiq',
       maintainer_email='mourad@polyaxon.com',
