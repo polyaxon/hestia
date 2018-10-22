@@ -4,7 +4,7 @@ from datetime import datetime
 
 try:
     from django.utils.timezone import now as dj_now
-except ImportError:
+except Exception:
     dj_now = None
 
 
