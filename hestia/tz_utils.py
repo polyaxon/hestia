@@ -3,9 +3,9 @@ import pytz
 from datetime import datetime
 
 try:
-    from django.utils.timezone import now
+    from django.utils.timezone import now as dj_now
 except ImportError:
-    now = None
+    dj_now = None
 
 
 utc = pytz.utc
@@ -15,8 +15,8 @@ def now(tzinfo=True):
     """
     Return an aware or naive datetime.datetime, depending on settings.USE_TZ.
     """
-    if now:
-        return now
+    if dj_now:
+        return dj_now()
 
     if tzinfo:
         # timeit shows that datetime.now(tz=utc) is 24% slower
