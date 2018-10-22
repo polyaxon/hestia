@@ -1,0 +1,2 @@
+class HestiaException(Exception):
+    pass
