@@ -11,7 +11,7 @@ except ImportError:
 utc = pytz.utc
 
 
-def now(tzinfo=None):
+def now(tzinfo=True):
     """
     Return an aware or naive datetime.datetime, depending on settings.USE_TZ.
     """
