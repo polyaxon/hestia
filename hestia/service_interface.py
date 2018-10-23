@@ -2,13 +2,12 @@ import inspect
 import itertools
 
 from hestia.exceptions import HestiaException
+from hestia.imports import import_string
 
 try:
     from django.utils.functional import LazyObject, empty
 except ImportError:
     raise HestiaException('This module depends on django.')
-
-from hestia.imports import import_string
 
 
 class InvalidService(Exception):

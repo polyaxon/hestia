@@ -36,4 +36,3 @@ class ManagerInterface(object):
     @property
     def items(self):
         return self.state.items()
-

@@ -8,4 +8,3 @@ def validate_url(url):
     if not parsed.hostname:
         return False
     return True
-

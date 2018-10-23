@@ -5,7 +5,6 @@ import pytz
 
 from datetime import datetime, timedelta
 
-
 epoch = datetime(1970, 1, 1, tzinfo=pytz.utc)
 
 
