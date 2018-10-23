@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+from __future__ import absolute_import, division, print_function
+
+
 def to_unit_memory(number):
     """Creates a string representation of memory size given `number`."""
     kb = 1024
