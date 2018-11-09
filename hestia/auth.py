@@ -1,3 +1,7 @@
+class AuthenticationError(Exception):
+    pass
+
+
 class AuthenticationTypes(object):
     TOKEN = 'Token'
     INTERNAL_TOKEN = 'Internaltoken'
