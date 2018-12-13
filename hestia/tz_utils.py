@@ -14,6 +14,10 @@ except Exception:
 utc = pytz.utc
 
 
+def get_time_zone(tz='UTC'):
+    return pytz.timezone(tz)
+
+
 def now(tzinfo=True):
     """
     Return an aware or naive datetime.datetime, depending on settings.USE_TZ.
@@ -26,3 +30,9 @@ def now(tzinfo=True):
         return datetime.utcnow().replace(tzinfo=utc)
     else:
         return datetime.now()
+
+
+def local_now(tz='UTC'):
+    _tz = get_time_zone(tz=tz)
+    return _tz.localize(datetime.utcnow()).replace(microsecond=0)
+
