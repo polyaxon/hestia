@@ -11,5 +11,5 @@ def to_list(value):
     if isinstance(value, (list, tuple)):
         return list(value)
     if np and isinstance(value, np.ndarray):
-        return list(value)
+        return value.tolist()
     return [value]
