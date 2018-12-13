@@ -9,7 +9,7 @@ except ImportError:
 
 def to_list(value, check_none=False):
     if check_none and value is None:
-        return None
+        return []
     if isinstance(value, (list, tuple, set)):
         return list(value)
     if np and isinstance(value, np.ndarray):
