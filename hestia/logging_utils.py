@@ -41,3 +41,9 @@ def log_spec(log_line, name='', timestamp=None, log_level=None, check_timestamp=
 
 
 LogSpec = log_spec
+
+
+class LogLevels(object):
+    INFO = 'INFO'
+    WARNING = 'WARNING'
+    ERROR = 'ERROR'
