@@ -2,7 +2,7 @@ from unittest import TestCase
 
 from mock import patch
 
-from hestia.logging_utils import log_spec, DATETIME_REGEX
+from hestia.logging_utils import log_spec
 
 
 class TestLoggingUtils(TestCase):

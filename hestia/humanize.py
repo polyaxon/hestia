@@ -4,7 +4,7 @@ from __future__ import absolute_import, division, print_function
 from hestia.tz_utils import local_now
 
 
-def humanize_timesince(start_time):
+def humanize_timesince(start_time):  # pylint:disable=too-many-return-statements
     """Creates a string representation of time since the given `start_time`."""
     if not start_time:
         return start_time

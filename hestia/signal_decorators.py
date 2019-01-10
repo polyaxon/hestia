@@ -1,3 +1,6 @@
+# pylint:disable=inconsistent-return-statements
+
+
 class IgnoreRawDecorator(object):
     """
     The `IgnoreRawDecorator` is a decorator to ignore raw/fixture data during signals handling.

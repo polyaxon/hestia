@@ -28,8 +28,7 @@ def now(tzinfo=True):
     if tzinfo:
         # timeit shows that datetime.now(tz=utc) is 24% slower
         return datetime.utcnow().replace(tzinfo=utc)
-    else:
-        return datetime.now()
+    return datetime.now()
 
 
 def local_now(tz='UTC'):
