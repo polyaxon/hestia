@@ -6,8 +6,8 @@ import pytz
 from datetime import datetime
 
 try:
-    from django.utils.timezone import now as dj_now
-except Exception:
+    from django.utils.timezone import now as dj_now  # pylint:disable=import-error
+except ImportError:
     dj_now = None
 
 
@@ -34,4 +34,3 @@ def now(tzinfo=True):
 def local_now(tz='UTC'):
     _tz = get_time_zone(tz=tz)
     return _tz.localize(datetime.utcnow()).replace(microsecond=0)
-
