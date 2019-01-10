@@ -1,2 +1,2 @@
 python-dateutil==2.7.5
-pytz==2018.5
+pytz>=2018.7
