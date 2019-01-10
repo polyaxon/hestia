@@ -41,7 +41,7 @@ class LazyServiceWrapper(LazyObject):
     """
 
     def __init__(self, backend_base, backend_path, options):
-        super().__init__()
+        super(LazyServiceWrapper, self).__init__()
         self.__dict__.update(
             {
                 '_backend_base': backend_base,
@@ -51,7 +51,7 @@ class LazyServiceWrapper(LazyObject):
         )
 
     def __getattr__(self, name):
-        if self._wrapped is empty:
+        if self._wrapped is empty:  # pylint:disable=attribute-defined-outside-init
             self._setup()
         return getattr(self._wrapped, name)
 
@@ -59,7 +59,7 @@ class LazyServiceWrapper(LazyObject):
         backend = import_string(self._backend_path)
         assert issubclass(backend, Service)
         instance = backend(**self._options)
-        self._wrapped = instance
+        self._wrapped = instance  # pylint:disable=attribute-defined-outside-init
 
     def expose(self, context):
         base = self._backend_base

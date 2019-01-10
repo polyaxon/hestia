@@ -7,6 +7,8 @@ from dateutil import parser
 
 from hestia.tz_utils import now
 
+# pylint:disable=anomalous-backslash-in-string
+
 DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S %Z"
 ISO_DATETIME_REGEX = re.compile(
     '([0-9]+)-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])[Tt]'
