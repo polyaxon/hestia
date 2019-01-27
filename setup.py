@@ -10,6 +10,7 @@ def read_readme():
     with open('README.md') as f:
         return f.read()
 
+
 class PyTest(TestCommand):
     def finalize_options(self):
         TestCommand.finalize_options(self)
@@ -23,7 +24,7 @@ class PyTest(TestCommand):
 
 
 setup(name='hestia',
-      version='0.2.5',
+      version='0.2.6',
       description='Polyaxon common utilities.',
       long_description=read_readme(),
       maintainer='Mourad Mourafiq',
