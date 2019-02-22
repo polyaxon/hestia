@@ -4,6 +4,8 @@ import shutil
 
 _logger = logging.getLogger('hestia.paths')
 
+# noqa
+
 
 def check_or_create_path(path: str = None) -> None:
     if not os.path.exists(path):
