@@ -2,4 +2,4 @@
 -r requirements-base-test.txt
 
 django-cors-headers==2.4.0
-djangorestframework==3.8.2
+djangorestframework==3.10.1

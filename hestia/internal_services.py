@@ -4,11 +4,13 @@ class InternalServices(object):  # noqa
     SIDECAR = 'sidecar'
     HELPER = 'helper'
     RUNNER = 'runner'
+    CONTROLLER = 'controller'
 
-    VALUES = [
+    VALUES = {
         DOCKERIZER,
         INITIALIZER,
         SIDECAR,
         HELPER,
-        RUNNER
-    ]
+        RUNNER,
+        CONTROLLER
+    }
