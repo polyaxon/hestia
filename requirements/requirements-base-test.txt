@@ -6,5 +6,5 @@ prospector==0.12.7
 pyflakes==1.6.0
 pytest==3.7.0
 pylint==1.8.4
-tox==3.1.2
+tox==3.13.2
 pep8-naming==0.7.0
