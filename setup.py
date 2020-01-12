@@ -24,7 +24,7 @@ class PyTest(TestCommand):
 
 
 setup(name='hestia',
-      version='0.3.1',
+      version='0.6.0',
       description='Polyaxon common utilities.',
       long_description=read_readme(),
       long_description_content_type="text/markdown",
